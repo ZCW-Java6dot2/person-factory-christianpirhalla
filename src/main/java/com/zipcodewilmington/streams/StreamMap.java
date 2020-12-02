@@ -1,7 +1,7 @@
 package com.zipcodewilmington.streams;
 
 import com.zipcodewilmington.streams.anthropoid.Person;
-import com.zipcodewilmington.streams.conversions.StreamConverter;
+import com.zipcodewilmington.streams.*;
 
 import java.util.Arrays;
 import java.util.List;
