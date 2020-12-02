@@ -2,6 +2,7 @@ package com.zipcodewilmington.streams;
 
 import com.zipcodewilmington.streams.anthropoid.TestPersonFactory;
 import com.zipcodewilmington.streams.anthropoid.TestSuiteAnthropoidRegression;
+import com.zipcodewilmington.streams.conversions.TestSuiteConversionRegression;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -10,6 +11,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         TestStreamFilter.class,
         TestSuiteAnthropoidRegression.class,
+        TestSuiteConversionRegression.class
 })
 
 /**
