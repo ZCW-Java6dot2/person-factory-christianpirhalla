@@ -1,6 +1,7 @@
 package com.zipcodewilmington.streams.conversions;
 
 import com.zipcodewilmington.streams.anthropoid.Person;
+import com.zipcodewilmington.streams.anthropoid.PersonFactory;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,12 +14,13 @@ import java.util.stream.Stream;
  * Created by leon on 5/25/17.
  * @ATTENTION_TO_STUDENTS You are FORBIDDEN from modifying this class
  */
-public class TestConversionAgent<T extends PersonConversionAgent<Person>> {
+public abstract class TestConversionAgent<T extends PersonConversionAgent<Person>> {
     private final T conversionAgent;
 
     private List<Person> personList;
     private Person[] personArray;
     private Stream<Person> personStream;
+
 
     public TestConversionAgent(T conversionAgent) {
         this.conversionAgent = conversionAgent;
